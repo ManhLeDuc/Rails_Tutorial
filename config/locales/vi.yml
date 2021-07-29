@@ -16,7 +16,7 @@ vi:
       intro_1: "Đây là trang chủ của"
       name_tutorial: "Ruby on Rails Tutorial"
       intro_2: "ứng dụng mẫu."
-      signUp: "Dang ky ngay!"
+      signUp: "Đăng ký ngay!"
     help:
       fore_title: "Hỗ trợ"
       name: "Nhận hỗ trợ"
@@ -34,3 +34,7 @@ vi:
       name: "Liên Lạc với chúng tôi"
       intro_1: "Hãy liên lạc Ruby on Rails Tutorial về ứng dụng mẫu tại"
       intro_2: "trang này"
+  users:
+    new:
+      fore_title: "Đăng ký"
+      name: "Đăng ký"

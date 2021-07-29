@@ -34,3 +34,7 @@ en:
       name: "Contact us"
       intro_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       intro_2: "contact page"
+  users:
+    new:
+      fore_title: "Sign Up"
+      name: "Sign Up"
