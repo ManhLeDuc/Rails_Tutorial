@@ -1,14 +1,16 @@
 vi:
+  welcome: "Chào mừng đến với Ứng dụng mẫu!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
     _header:
       home: "Home"
-      help: "Giúp đỡ"
-      about: "About"
-      logIn: "Đăng nhập"
+      log_in: "Đăng nhập"
       en: "Anh"
       vi: "Việt"
+    _footer:
+      help: "Giúp đỡ"
+      about: "About"
   static_pages:
     home:
       fore_title: "Trang chủ"
@@ -16,7 +18,7 @@ vi:
       intro_1: "Đây là trang chủ của"
       name_tutorial: "Ruby on Rails Tutorial"
       intro_2: "ứng dụng mẫu."
-      signUp: "Đăng ký ngay!"
+      sign_up: "Đăng ký ngay!"
     help:
       fore_title: "Hỗ trợ"
       name: "Nhận hỗ trợ"
@@ -35,6 +37,23 @@ vi:
       intro_1: "Hãy liên lạc Ruby on Rails Tutorial về ứng dụng mẫu tại"
       intro_2: "trang này"
   users:
+    sign_up_fail: "Đăng ký thất bại. Vui lòng thử lại!"
     new:
       fore_title: "Đăng ký"
       name: "Đăng ký"
+      submit: "Tạo tài khoản"
+    index:
+    show:
+      not_found: "Không tìm thấy người dùng!"
+    edit:
+  shared:
+    error_messages:
+      info: "Form đăng ký gặp"
+      error: "lỗi"
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Mật khẩu xác nhận"
