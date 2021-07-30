@@ -3,9 +3,9 @@
     <%= link_to "sample app", "#", id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to t("layouts._header.home"), "#" %></li>
-        <li><%= link_to t("layouts._header.help"), "#" %></li>
-        <li><%= link_to t("layouts._header.about"), "#" %></li>
+        <li><%= link_to t("layouts._header.home"), home_path %></li>
+        <li><%= link_to t("layouts._header.help"), help_path %></li>
+        <li><%= link_to t("layouts._header.about"), about_path %></li>
         <li><%= link_to t("layouts._header.logIn"), "#" %></li>
         <li><%= link_to t("layouts._header.en"), locale: :en %></li>
         <li><%= link_to t("layouts._header.vi"), locale: :vi %></li>
