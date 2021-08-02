@@ -10,7 +10,7 @@ vi:
       en: "Anh"
       vi: "Việt"
       account: "Tài khoản"
-      profile: "Thông tin"
+      profile: "Hồ sơ"
       settings: "Cài đặt"
       log_out: "Đăng xuất"
     footer:
@@ -57,6 +57,7 @@ vi:
       name: "Đăng nhập"
       new_user?: "Chưa có tài khoản? "
       sign_up_now: "Đăng ký ngay!"
+      remember_me: "Ghi nhớ tài khoản"
       submit: "Đăng nhập"
     create:
       fail: "Email hoặc Mật khẩu không đúng"
