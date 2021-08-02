@@ -1,14 +1,16 @@
 en:
+  welcome: "Welcome to the Sample App!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
     _header:
       home: "Home"
-      help: "Help"
-      about: "About"
-      logIn: "Log in"
+      log_in: "Log in"
       en: "EN"
       vi: "VI"
+    _footer:
+      help: "Help"
+      about: "About"
   static_pages:
     home:
       fore_title: "Home"
@@ -16,7 +18,7 @@ en:
       intro_1: "This is the home page for the"
       name_tutorial: "Ruby on Rails Tutorial"
       intro_2: "sample application."
-      signUp: "Sign up now!"
+      sign_up: "Sign up now!"
     help:
       fore_title: "Help"
       name: "Need Help"
@@ -35,6 +37,23 @@ en:
       intro_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       intro_2: "contact page"
   users:
+    sign_up_fail: "Sign up failed. Please try again!"
     new:
       fore_title: "Sign Up"
       name: "Sign Up"
+      submit: "Create my account"
+    index:
+    show:
+      not_found: "User not Found!"
+    edit:
+  shared:
+    error_messages:
+      info: "The form contains"
+      error: "error(s)"
+  activerecord:
+    attributes:
+      user:
+        name: "Name"
+        email: "Email"
+        password: "Password"
+        password_confirmation: "Confirm password"
