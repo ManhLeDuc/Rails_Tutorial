@@ -3,14 +3,19 @@ vi:
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
-    _header:
+    header:
       home: "Home"
       log_in: "Đăng nhập"
+      help: "Giúp đỡ"
       en: "Anh"
       vi: "Việt"
-    _footer:
-      help: "Giúp đỡ"
+      account: "Tài khoản"
+      profile: "Thông tin"
+      settings: "Cài đặt"
+      log_out: "Đăng xuất"
+    footer:
       about: "About"
+      contact: "Liên lạc"
   static_pages:
     home:
       fore_title: "Trang chủ"
@@ -46,6 +51,15 @@ vi:
     show:
       not_found: "Không tìm thấy người dùng!"
     edit:
+  sessions:
+    new:
+      fore_title: "Đăng nhập"
+      name: "Đăng nhập"
+      new_user?: "Chưa có tài khoản? "
+      sign_up_now: "Đăng ký ngay!"
+      submit: "Đăng nhập"
+    create:
+      fail: "Email hoặc Mật khẩu không đúng"
   shared:
     error_messages:
       info: "Form đăng ký gặp"
@@ -57,3 +71,8 @@ vi:
         email: "Email"
         password: "Mật khẩu"
         password_confirmation: "Mật khẩu xác nhận"
+  helpers:
+    label:
+      session:
+        email: "Email"
+        password: "Mật khẩu"
