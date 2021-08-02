@@ -3,13 +3,18 @@ en:
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
-    _header:
+    header:
       home: "Home"
       log_in: "Log in"
+      help: "Help"
       en: "EN"
       vi: "VI"
-    _footer:
-      help: "Help"
+      account: "Account"
+      profile:
+      settings:
+      log_out:
+    footer:
+      contact: "Contact"
       about: "About"
   static_pages:
     home:
@@ -46,6 +51,15 @@ en:
     show:
       not_found: "User not Found!"
     edit:
+  sessions:
+    new:
+      fore_title: "Sign In"
+      name: "Sign In"
+      new_user?: "New User? "
+      sign_up_now: "Sign Up now!"
+      submit: "Log in"
+    create:
+      fail: "Invalid email/password combination"
   shared:
     error_messages:
       info: "The form contains"
@@ -57,3 +71,8 @@ en:
         email: "Email"
         password: "Password"
         password_confirmation: "Confirm password"
+  helpers:
+    label:
+      session:
+        email: "Email"
+        password: "Password"
