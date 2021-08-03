@@ -1,5 +1,6 @@
 en:
   welcome: "Welcome to the Sample App!"
+  please_login: "Please log in."
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -9,7 +10,8 @@ en:
       help: "Help"
       en: "EN"
       vi: "VI"
-      account: "Account"
+      users:
+      account:
       profile:
       settings:
       log_out:
@@ -43,14 +45,27 @@ en:
       intro_2: "contact page"
   users:
     sign_up_fail: "Sign up failed. Please try again!"
+    update_success: "Profile updated!"
+    update_fail: "Update failed. Please try again!"
+    delete_success: "User deleted!"
+    delete_fail: "Delete failed. Please try again!"
+    not_found: "User not Found!"
     new:
       fore_title: "Sign Up"
       name: "Sign Up"
       submit: "Create my account"
     index:
+      fore_title: "All users"
+      name: "All users"
+    user:
+      delete:
+      you_sure: "Are you sure?"
     show:
-      not_found: "User not Found!"
     edit:
+      fore_title: "Edit user"
+      name: "Update your profile"
+      submit: "Save changes"
+      change: "change"
   sessions:
     new:
       fore_title: "Sign In"
@@ -64,7 +79,7 @@ en:
   shared:
     error_messages:
       info: "The form contains"
-      error: "error(s)"
+      error: "error"
   activerecord:
     attributes:
       user:

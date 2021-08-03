@@ -1,5 +1,6 @@
 vi:
   welcome: "Chào mừng đến với Ứng dụng mẫu!"
+  please_login: "Xin hãy đăng nhập."
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -9,6 +10,7 @@ vi:
       help: "Giúp đỡ"
       en: "Anh"
       vi: "Việt"
+      users: "Người dùng"
       account: "Tài khoản"
       profile: "Hồ sơ"
       settings: "Cài đặt"
@@ -43,14 +45,26 @@ vi:
       intro_2: "trang này"
   users:
     sign_up_fail: "Đăng ký thất bại. Vui lòng thử lại!"
+    update_success: "Hồ sơ đã được cập nhật!"
+    update_fail: "Cập nhật thất bại. Vui lòng thử lại!"
+    delete_success: "Người dùng đã bị xóa"
+    delete_fail: "Xóa thất bại. Vui lòng thử lại!"
+    not_found: "Không tìm thấy người dùng!"
     new:
       fore_title: "Đăng ký"
       name: "Đăng ký"
       submit: "Tạo tài khoản"
     index:
+      fore_title: "Tất cả người dùng"
+      name: "Tất cả người dùng"
+    user:
+      delete: "Xoá"
+      you_sure: "Bạn chắc chưa?"
     show:
-      not_found: "Không tìm thấy người dùng!"
     edit:
+      fore_title: "Edit người dùng"
+      name: "Cập nhật hồ sơ"
+      submit: "Lưu thay đổi"
   sessions:
     new:
       fore_title: "Đăng nhập"
@@ -59,11 +73,12 @@ vi:
       sign_up_now: "Đăng ký ngay!"
       remember_me: "Ghi nhớ tài khoản"
       submit: "Đăng nhập"
+      change: "thay đổi"
     create:
       fail: "Email hoặc Mật khẩu không đúng"
   shared:
     error_messages:
-      info: "Form đăng ký gặp"
+      info: "Form gặp"
       error: "lỗi"
   activerecord:
     attributes:

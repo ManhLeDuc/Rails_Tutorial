@@ -2,6 +2,12 @@ rails_home_link: "https://www.railstutorial.org/"
 rails_help_link: "https://www.railstutorial.org/help"
 rails_book_link: "https://www.railstutorial.org/book"
 rails_contact_link: "https://www.railstutorial.org/contact"
+gravatar:
+  size:
+    medium: 50
+    default: 80
+  link: "https://secure.gravatar.com/avatar"
+  email: "https://gravatar.com/emails"
 name:
   length:
     max: 50

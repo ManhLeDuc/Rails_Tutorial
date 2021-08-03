@@ -21,6 +21,6 @@ class SessionsController < ApplicationController
   def login user, remember_me
     log_in user
     remember_me ? remember(user) : forget(user)
-    redirect_to user
+    redirect_back_or user
   end
 end
