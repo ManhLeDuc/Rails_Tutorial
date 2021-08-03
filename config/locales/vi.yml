@@ -44,6 +44,7 @@ vi:
       intro_1: "Hãy liên lạc Ruby on Rails Tutorial về ứng dụng mẫu tại"
       intro_2: "trang này"
   users:
+    sign_up_success: "Hãy kiểm tra email để kích hoạt tài khoản."
     sign_up_fail: "Đăng ký thất bại. Vui lòng thử lại!"
     update_success: "Hồ sơ đã được cập nhật!"
     update_fail: "Cập nhật thất bại. Vui lòng thử lại!"
@@ -76,6 +77,11 @@ vi:
       change: "thay đổi"
     create:
       fail: "Email hoặc Mật khẩu không đúng"
+      not_activated: "Tài khoản của bạn chưa được kích hoạt. Hãy kiểm tra mail để kích hoạt."
+  account_activations:
+    edit:
+      activate_success: "Kích hoạt tài khoản thành công"
+      activate_fail: "Link kích hoạt không hợp lệ"
   shared:
     error_messages:
       info: "Form gặp"
@@ -92,3 +98,13 @@ vi:
       session:
         email: "Email"
         password: "Mật khẩu"
+  user_mailer:
+    account_activation:
+      name: "Kích hoạt tài khoản"
+      info: "Chào mừng đến với Ứng dụng mẫu! Nhấn vào link bên dưới để kích hoạt tài khoản:"
+      hi: "Xin chào "
+      activate: "Kích hoạt"
+    password_reset:
+      name: "Reset mật khẩu"
+      info: "Nhấn vào link bên dưới để kích hoạt tài khoản:"
+      hi: "Xin chào "

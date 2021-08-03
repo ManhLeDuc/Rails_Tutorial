@@ -19,8 +19,13 @@ class SessionsController < ApplicationController
   private
 
   def login user, remember_me
-    log_in user
-    remember_me ? remember(user) : forget(user)
-    redirect_back_or user
+    if user.activated
+      log_in user
+      remember_me ? remember(user) : forget(user)
+      redirect_back_or user
+    else
+      flash[:warning] = t "sessions.create.not_activated"
+      redirect_to root_url
+    end
   end
 end
