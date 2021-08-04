@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   end
 
   def record_not_found_rescue
-    flash[:danger] = t ".not_found"
+    flash[:danger] = t "users.not_found"
     redirect_to root_path
   end
 end
