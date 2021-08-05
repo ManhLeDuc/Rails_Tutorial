@@ -44,6 +44,7 @@ en:
       intro_1: "Contact the Ruby on Rails Tutorial about the sample app at the"
       intro_2: "contact page"
   users:
+    sign_up_success: "Please check your email to activate your account."
     sign_up_fail: "Sign up failed. Please try again!"
     update_success: "Profile updated!"
     update_fail: "Update failed. Please try again!"
@@ -76,6 +77,11 @@ en:
       submit: "Log in"
     create:
       fail: "Invalid email/password combination"
+      not_activated: "Account not activated. Check your email for the activation link."
+  account_activations:
+    edit:
+      activate_success: "Account activated!"
+      activate_fail: "Invalid activation link"
   shared:
     error_messages:
       info: "The form contains"
@@ -92,3 +98,13 @@ en:
       session:
         email: "Email"
         password: "Password"
+  user_mailer:
+    account_activation:
+      name: "Account Activation"
+      info: "Welcome to the Sample App! Click on the link below to activate your account:"
+      hi: "Hi "
+      activate: ""
+    password_reset:
+      name: "Password Reset"
+      info: "Click on the link below to activate your account:"
+      hi: "Hi "
