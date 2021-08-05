@@ -1,15 +1,12 @@
 class User < ApplicationRecord
+  has_many :microposts, dependent: :destroy
   attr_accessor :remember_token, :activation_token, :reset_token
   before_create :create_activation_digest
   before_save :downcase_email
 
-  USER_ATTRS = [
-    :name, :email, :password, :password_confirmation
-  ].freeze
+  USER_ATTRS = %i(name email password password_confirmation).freeze
 
-  PASSWORD_ATTRS = [
-    :password, :password_confirmation
-  ].freeze
+  PASSWORD_ATTRS = %i(password password_confirmation).freeze
 
   validates :name, presence: true, length: {maximum: Settings.name.length.max}
   validates :email, presence: true,
@@ -32,6 +29,10 @@ class User < ApplicationRecord
     def new_token
       SecureRandom.urlsafe_base64
     end
+  end
+
+  def feed
+    microposts.newest
   end
 
   def remember

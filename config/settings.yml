@@ -2,6 +2,7 @@ rails_home_link: "https://www.railstutorial.org/"
 rails_help_link: "https://www.railstutorial.org/help"
 rails_book_link: "https://www.railstutorial.org/book"
 rails_contact_link: "https://www.railstutorial.org/contact"
+page_size: 10
 gravatar:
   size:
     medium: 50
@@ -20,3 +21,13 @@ password:
     min: 6
   reset:
     expried_time: 2
+micropost:
+  content:
+    max: 140
+  image:
+    max_size: 5
+    content_types:
+      - image/jpeg
+      - image/gif
+      - image/png
+    resize: [500, 500]
