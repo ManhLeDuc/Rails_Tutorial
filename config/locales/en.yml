@@ -75,6 +75,7 @@ en:
       sign_up_now: "Sign Up now!"
       remember_me: "Remember me on this computer"
       submit: "Log in"
+      forgot_password: "(forgot password)"
     create:
       fail: "Invalid email/password combination"
       not_activated: "Account not activated. Check your email for the activation link."
@@ -82,6 +83,22 @@ en:
     edit:
       activate_success: "Account activated!"
       activate_fail: "Invalid activation link"
+  password_resets:
+    reset_expired: "Password reset has expired."
+    reset_success: "Password has been reset."
+    reset_fail: "Can not reset password"
+    empty_password: "can't be empty"
+    edit:
+      fore_title: "Reset Password"
+      name: "Reset Password"
+      submit: "Reset"
+    new:
+      fore_title: "Forgot Password"
+      name: "Forgot Password"
+      submit: "Submit"
+    create:
+      success: "Email sent with password reset instructions"
+      fail: "Email address not found"
   shared:
     error_messages:
       info: "The form contains"
@@ -106,5 +123,8 @@ en:
       activate: ""
     password_reset:
       name: "Password Reset"
-      info: "Click on the link below to activate your account:"
+      info: "To reset your password click the link below:"
       hi: "Hi "
+      info_2: "This link will expire in two hours."
+      info_3: "If you did not request your password to be reset, please ignore this email and your password will stay as it is."
+      reset: "Reset Password"

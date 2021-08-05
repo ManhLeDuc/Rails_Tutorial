@@ -18,3 +18,5 @@ email:
 password:
   length:
     min: 6
+  reset:
+    expried_time: 2

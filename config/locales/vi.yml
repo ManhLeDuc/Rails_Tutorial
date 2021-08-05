@@ -75,6 +75,7 @@ vi:
       remember_me: "Ghi nhớ tài khoản"
       submit: "Đăng nhập"
       change: "thay đổi"
+      forgot_password: "(quên mật khẩu)"
     create:
       fail: "Email hoặc Mật khẩu không đúng"
       not_activated: "Tài khoản của bạn chưa được kích hoạt. Hãy kiểm tra mail để kích hoạt."
@@ -82,6 +83,22 @@ vi:
     edit:
       activate_success: "Kích hoạt tài khoản thành công"
       activate_fail: "Link kích hoạt không hợp lệ"
+  password_resets:
+    reset_expired: "Mật khẩu đã qúa hạn để đặt lại."
+    reset_success: "Mật khẩu đã được đặt lại."
+    reset_fail: "Đặt lại mật khẩu thất bại."
+    empty_password: "không thể rỗng"
+    edit:
+      fore_title: "Đặt lại mật khẩu"
+      name: "Đặt lại mật khẩu"
+      submit: "Đặt lại"
+    new:
+      fore_title: "Quên mật khẩu"
+      name: "Quên mật khẩu"
+      submit: "Xác nhận"
+    create:
+      success: "Email hướng dẫn đặt lại mật khẩu đã được gửi"
+      fail: "Không tìm tháy Email"
   shared:
     error_messages:
       info: "Form gặp"
@@ -106,5 +123,8 @@ vi:
       activate: "Kích hoạt"
     password_reset:
       name: "Reset mật khẩu"
-      info: "Nhấn vào link bên dưới để kích hoạt tài khoản:"
+      info: "Nhấn vào link bên dưới để đặt lại mật khẩu:"
       hi: "Xin chào "
+      info_2: "Đương link này sẽ hết hạn sau 2 tiếng."
+      info_3: "Nếu bạn không muốn đổi mật khẩu, hãy bỏ qua mail này. Mật khẩu của bạn sẽ không đổi."
+      reset: "Đặt lại Mật khẩu"
