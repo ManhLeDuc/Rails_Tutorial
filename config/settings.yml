@@ -3,8 +3,10 @@ rails_help_link: "https://www.railstutorial.org/help"
 rails_book_link: "https://www.railstutorial.org/book"
 rails_contact_link: "https://www.railstutorial.org/contact"
 page_size: 10
+big_page_size: 20
 gravatar:
   size:
+    small: 30
     medium: 50
     default: 80
   link: "https://secure.gravatar.com/avatar"

@@ -5,11 +5,11 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @users = User.all.page params[:page]
+    @users = User.all.page(params[:page]).per Settings.big_page_size
   end
 
   def show
-    @microposts = load_feed_page @user, params[:page]
+    @microposts = load_user_feed_page @user, params[:page]
   end
 
   def new
@@ -61,9 +61,5 @@ class UsersController < ApplicationController
 
   def admin_user
     redirect_to root_url unless current_user.admin?
-  end
-
-  def load_user
-    @user = User.find params[:id]
   end
 end

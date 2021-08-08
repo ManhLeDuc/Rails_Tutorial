@@ -3,6 +3,11 @@ en:
   please_login: "Please log in."
   bad_request: "Bad Request!"
   invalid_size: "should be less than %{size}MB"
+  following: "Following"
+  follower: "Follower"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  not_found: "Data not found!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -71,6 +76,9 @@ en:
       name: "Update your profile"
       submit: "Save changes"
       change: "change"
+    show_follow:
+      micoposts: "Microposts:"
+      view_profile: "view my profile"
   sessions:
     new:
       fore_title: "Sign In"
@@ -125,6 +133,9 @@ en:
     user_info:
       view_profile: "view my profile"
       micropost: "micropost"
+    stats:
+      following: "following"
+      follower: "follower"
   activerecord:
     errors:
       models:

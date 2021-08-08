@@ -16,7 +16,7 @@ class ApplicationController < ActionController::Base
   end
 
   def record_not_found_rescue
-    flash[:danger] = t "users.not_found"
+    flash[:danger] = t "not_found"
     redirect_to root_path
   end
 
@@ -26,5 +26,9 @@ class ApplicationController < ActionController::Base
     store_location
     flash[:danger] = t "please_login"
     redirect_to login_url
+  end
+
+  def load_user
+    @user = User.find params[:id]
   end
 end
