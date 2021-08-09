@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   before_action :set_locale
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found_rescue
   include SessionsHelper
+  include MicropostsHelper
 
   private
   def set_locale
@@ -17,5 +18,13 @@ class ApplicationController < ActionController::Base
   def record_not_found_rescue
     flash[:danger] = t "users.not_found"
     redirect_to root_path
+  end
+
+  def logged_in_user
+    return if logged_in?
+
+    store_location
+    flash[:danger] = t "please_login"
+    redirect_to login_url
   end
 end

@@ -1,6 +1,8 @@
 vi:
   welcome: "Chào mừng đến với Ứng dụng mẫu!"
   please_login: "Xin hãy đăng nhập."
+  bad_request: "Yêu cầu không hợp lệ!"
+  invalid_size: "chọn ảnh bé hơn %{size}MB"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -26,6 +28,7 @@ vi:
       name_tutorial: "Ruby on Rails Tutorial"
       intro_2: "ứng dụng mẫu."
       sign_up: "Đăng ký ngay!"
+      feed: "Bài đăng mới"
     help:
       fore_title: "Hỗ trợ"
       name: "Nhận hỗ trợ"
@@ -62,6 +65,7 @@ vi:
       delete: "Xoá"
       you_sure: "Bạn chắc chưa?"
     show:
+      micropost: "Bài đăng"
     edit:
       fore_title: "Edit người dùng"
       name: "Cập nhật hồ sơ"
@@ -99,17 +103,43 @@ vi:
     create:
       success: "Email hướng dẫn đặt lại mật khẩu đã được gửi"
       fail: "Không tìm tháy Email"
+  microposts:
+    create_success: "Tạo bài viết thành công!"
+    create_fail: "Tạo bài viết thất bại!"
+    delete_success: "Xóa bài viết thành công!"
+    đelête_fail: "Xóa bài viết thất bại!"
+    micropost:
+      posted: "Được viết"
+      ago: "trước"
+      delete: "Xoá"
+      you_sure: "Bạn chắc chưa?"
   shared:
     error_messages:
       info: "Form gặp"
       error: "lỗi"
+    micropost_form:
+      placeholder: "Tạo bài viết mới..."
+      submit: "Đăng"
+      info_1: "Dung lượng file tối đa là "
+      info_2: "Hãy chọn file nhỏ hơn."
+    user_info:
+      view_profile: "xem hồ sơ"
+      micropost: "bài đăng"
   activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              invalid_format: "phải chọn ảnh đúng định dạng"
     attributes:
       user:
         name: "Tên"
         email: "Email"
         password: "Mật khẩu"
         password_confirmation: "Mật khẩu xác nhận"
+      micropost:
+        content: "Nội dung"
   helpers:
     label:
       session:

@@ -12,4 +12,5 @@ Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 require('jquery')
+require('./image_size')
 import 'bootstrap'

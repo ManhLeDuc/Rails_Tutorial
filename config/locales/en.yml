@@ -1,6 +1,8 @@
 en:
   welcome: "Welcome to the Sample App!"
   please_login: "Please log in."
+  bad_request: "Bad Request!"
+  invalid_size: "should be less than %{size}MB"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -26,6 +28,7 @@ en:
       name_tutorial: "Ruby on Rails Tutorial"
       intro_2: "sample application."
       sign_up: "Sign up now!"
+      feed: "Micropost Feed"
     help:
       fore_title: "Help"
       name: "Need Help"
@@ -62,6 +65,7 @@ en:
       delete:
       you_sure: "Are you sure?"
     show:
+      micropost: "Micropost"
     edit:
       fore_title: "Edit user"
       name: "Update your profile"
@@ -99,17 +103,43 @@ en:
     create:
       success: "Email sent with password reset instructions"
       fail: "Email address not found"
+  microposts:
+    create_success: "Micropost created!"
+    create_fail: "Failed to create Micropost"
+    delete_success: "Micropost deleted"
+    đelête_fail: "Deleted fail"
+    micropost:
+      posted: "Posted"
+      ago: "ago"
+      delete:
+      you_sure: "Are you sure?"
   shared:
     error_messages:
       info: "The form contains"
       error: "error"
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+      info_1: "Maximum file size is "
+      info_2: "Please choose a smaller file."
+    user_info:
+      view_profile: "view my profile"
+      micropost: "micropost"
   activerecord:
+    errors:
+      models:
+        micropost:
+          attributes:
+            image:
+              invalid_format: "must be a valid image format"
     attributes:
       user:
         name: "Name"
         email: "Email"
         password: "Password"
         password_confirmation: "Confirm password"
+      micropost:
+        content: "Content"
   helpers:
     label:
       session:
