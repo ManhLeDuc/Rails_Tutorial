@@ -3,6 +3,11 @@ vi:
   please_login: "Xin hãy đăng nhập."
   bad_request: "Yêu cầu không hợp lệ!"
   invalid_size: "chọn ảnh bé hơn %{size}MB"
+  following: "Đang theo dõi"
+  follower: "Người theo dõi"
+  follow: "Theo dõi"
+  unfollow: "Bỏ theo dõi"
+  not_found: "Không tìm thấy dữ liệu!"
   layouts:
     application:
       title: "Ruby on Rails Tutorial Sample App"
@@ -70,6 +75,9 @@ vi:
       fore_title: "Edit người dùng"
       name: "Cập nhật hồ sơ"
       submit: "Lưu thay đổi"
+    show_follow:
+      micoposts: "Các bài đăng:"
+      view_profile: "xem trang cá nhân của tôi"
   sessions:
     new:
       fore_title: "Đăng nhập"
@@ -125,6 +133,9 @@ vi:
     user_info:
       view_profile: "xem hồ sơ"
       micropost: "bài đăng"
+    stats:
+      following: "đang theo dõi"
+      follower: "người theo dõi"
   activerecord:
     errors:
       models:
